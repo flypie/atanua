@@ -112,8 +112,8 @@ distribution.
 
 #include "ChipTriState.h"
 #include "namedpin.h"
-#include "PullLowChip.h"
-#include "PullHighChip.h"
+#include "pulllowchip.h"
+#include "pullhighchip.h"
 #include "chip744040.h"
 
 

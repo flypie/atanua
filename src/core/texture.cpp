@@ -1,7 +1,3 @@
-
-#include <math.h>
-#include "toolkit.h"
-
 #include <math.h>
 #include "toolkit.h"
 
@@ -38,12 +34,10 @@ static void do_load_blank_texture(texpair& Tex)
 {
 	if(!Tex.mRawBitMap)
 	{
-		Tex.mRawBitMap=(unsigned char*)new unsigned long[Tex.mxSize*Tex.mySize];
+		TexPixel *src = new TexPixel[Tex.mxSize*Tex.mySize];
 
-		if(Tex.mRawBitMap==NULL)
+		if(src==NULL)
 			return;
-
-		unsigned long* src=(unsigned long*)Tex.mRawBitMap;
 
 		for(int y=0; y<Tex.mySize; y++)
 		{
@@ -52,6 +46,7 @@ static void do_load_blank_texture(texpair& Tex)
 				src[y*Tex.mySize+x]=0xFFFFFFFF;
 			}
 		}
+		Tex.mRawBitMap=(unsigned char*) src;
 	}
 
 	glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA,Tex.mxSize,Tex.mySize,0,GL_RGBA,GL_UNSIGNED_BYTE,Tex.mRawBitMap);
@@ -92,7 +87,7 @@ static void do_load_file_texture(texpair& Tex)
 		if(Tex.mRawBitMap==NULL)
 			return;
 
-		unsigned long* src=(unsigned long*)Tex.mRawBitMap;
+		unsigned int* src=(unsigned int*)Tex.mRawBitMap;
 
 		// mark all pixels with alpha = 0 to black
 		for(i=0; i<Tex.mySize; i++)
@@ -122,7 +117,7 @@ static void do_load_file_texture(texpair& Tex)
 		unsigned int* bbuf=Tex.mip+(Tex.mxSize*Tex.mySize*3);
 		unsigned int* abuf=Tex.mip+(Tex.mxSize*Tex.mySize*4);
 
-		unsigned long* src=(unsigned long*)Tex.RawBitMap;
+		unsigned int* src=(unsigned int*)Tex.RawBitMap;
 
 		for(j=0,c=0; j<Tex.mySize; j++)
 		{

@@ -468,7 +468,10 @@ public:
 		UNKNOWN,
 		TEXT,
 		DECLARATION,
-		TYPECOUNT
+		TYPECOUNT,
+		// Forward compatibility with 2.6
+		TINYXML_ELEMENT = ELEMENT,
+		TINYXML_TEXT = TEXT
 	};
 
 	virtual ~TiXmlNode();

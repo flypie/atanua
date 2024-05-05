@@ -65,8 +65,6 @@ distribution.
 
 #include "stb/stb_image.h"
 
-#include "TEXTURE.h"
-
 #define stricmp _stricmp
 #define strdup _strdup
 #endif
@@ -75,7 +73,7 @@ distribution.
 #ifdef OSX_VERSION
 #include <SDL/SDL.h>
 #include "stb/stb_image.h"
-#include "glee/GLee.h"
+#include <OpenGL/glew.h>
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
 #define stricmp(a,b) strcasecmp((a),(b))
@@ -83,9 +81,10 @@ distribution.
 
 
 #ifdef LINUX_VERSION
-#include <SDL/SDL.h>
+#include <SDL.h>
+#include <SDL_video.h>
 #include "stb/stb_image.h"
-#include "glee/GLee.h"
+#include <GL/glew.h>
 #include <GL/gl.h>
 #include <GL/glu.h>
 #define stricmp(a,b) strcasecmp((a),(b))
@@ -95,6 +94,7 @@ distribution.
 #include <stdlib.h>
 #include <math.h>
 
+#include "texture.h"
 #include "mersennetwister.h"
 #include "angelcodefont.h"
 #include "fileutils.h"
@@ -118,7 +118,15 @@ distribution.
 #define GEN_ID (__LINE__)
 #endif
 
-#define GLErrorTest() { GLenum err=glGetError();if(err!=GL_NO_ERROR){char Buff[256];sprintf(Buff,"File %s Line %d, Error 0x%08x (%s)\n",__FILE__,__LINE__,err,glewGetErrorString(err));SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,__FUNCTION__,Buff,NULL);}}
+#define GLErrorTest() { \
+	GLenum err=glGetError(); \
+	if(err!=GL_NO_ERROR) \
+	{ \
+		char Buff[256]; \
+		sprintf(Buff,"File %s Line %d, Error 0x%08x (%s)\n",__FILE__,__LINE__,err,glewGetErrorString(err)); \
+		SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,__FUNCTION__,Buff,NULL); \
+	} \
+}
 
 struct UIState
 {
@@ -233,5 +241,7 @@ void imgui_prepare();
 void imgui_finish();
 
 char* mystrdup(const char* aString);
+
+int get_key_state(int character);
 
 #endif

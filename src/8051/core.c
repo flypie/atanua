@@ -441,7 +441,7 @@ int tick(struct em8051 *aCPU)
 
 int decode(struct em8051 *aCPU, int aPosition, unsigned char *aBuffer)
 {
-    return aCPU->dec[aCPU->mCodeMem[aPosition & (aCPU->mCodeMemSize - 1)]](aCPU, aPosition, aBuffer);
+    return aCPU->dec[aCPU->mCodeMem[aPosition & (aCPU->mCodeMemSize - 1)]](aCPU, aPosition, (char *)aBuffer);
 }
 
 void disasm_setptrs(struct em8051 *aCPU);

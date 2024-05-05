@@ -71,7 +71,7 @@ private:
 
     char    TextureName[32];
 
-    static unsigned int Composite::mCompositeNId;
+    static unsigned int mCompositeNId;
 
 public:
     Composite(CType atype);

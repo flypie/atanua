@@ -22,9 +22,14 @@ distribution.
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include "atanua.h"
 #include "toolkit.h"
+#include "atanua.h"
 #include "fileutils.h"
+#include "texture.h"
+
+#if !defined(GLEW_ARB_vertex_buffer_object) && defined (GL_ARB_vertex_buffer_object)
+#define GLEW_ARB_vertex_buffer_object GL_ARB_vertex_buffer_object
+#endif
 
 void ACFontInfoBlock::load(File * f)
 {

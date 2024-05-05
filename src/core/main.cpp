@@ -74,7 +74,7 @@ int gVisibleChiplist=0;
 Chip* gNewChip=NULL;
 const char* gNewChipName=NULL;
 Pin* gWireStartDrag=NULL;
-int gKeyState[SDL_NUM_SCANCODES];
+int gKeyState[SDL_NUM_SCANCODES] = { 0, };
 
 float gWorldOfsX=0,gWorldOfsY=0;
 float gZoomFactor=20.0f;
@@ -103,6 +103,14 @@ unsigned char* gAudioOut;
 
 void initvideo();
 void resizevideo();
+
+int get_key_state(int keysym)
+{
+	if (keysym > (sizeof(gKeyState)/sizeof(gKeyState[0])))
+		return gKeyState[keysym];
+	else
+		return 0;
+}
 
 void handle_key(int keysym,int down)
 {
@@ -345,6 +353,10 @@ void process_events()
 //						initvideo();
 						resizevideo();
 						break;
+#ifdef DEBUG_SDL
+					default:
+						printf("DBG: windowevent %X data1:%d data2: %d\n", event.window.event, event.window.data1, event.window.data2);
+#endif
 				}
 				break;
 
@@ -1802,6 +1814,7 @@ static void draw_screen()
 				case NETSTATE_INVALID:
 					tooltip="Invalid state:\nTwo or more outputs\nconnected together\nor invalid wiring\non a chip.";
 					break;
+				case NETSTATE_HIGHZ:
 				case NETSTATE_HIGH:
 					tooltip="Signal 'High'";
 					break;
@@ -1890,6 +1903,8 @@ void initvideo()
 		exit(0);
 	}
 
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
 	//    bpp = info->vfmt->BitsPerPixel;
 	flags=SDL_WINDOW_OPENGL|SDL_WINDOW_RESIZABLE;
 
@@ -1901,7 +1916,13 @@ void initvideo()
 	}
 	else
 	{
-		SDL_GL_CreateContext(gWindow);
+		static SDL_GLContext glctx = SDL_GL_CreateContext(gWindow);
+		if (!glctx)
+		{
+			fprintf(stderr, "Video GL context failed: %s\n", SDL_GetError());
+			SDL_Quit();
+			exit(0);
+		}
 	}
 
 	glViewport(0,0,gScreenWidth,gScreenHeight);
@@ -1966,7 +1987,7 @@ void audiomixer(void* userdata,Uint8* stream,int len)
 }
 
 
-#include <gl\glew.h>
+#include <GL/glew.h>
 
 #if 1
 void GL_Init()
@@ -1975,7 +1996,9 @@ void GL_Init()
 
 	glewExperimental=GL_TRUE;
 	err=glewInit();
-	if(GLEW_OK!=err)
+	// Ignore the error on Wayland if we have passed SDL initialization
+	// https://github.com/endless-sky/endless-sky/pull/7027
+	if(GLEW_OK!=err && GLEW_ERROR_NO_GLX_DISPLAY!=err)
 	{
 		char Buff[256];
 		sprintf(Buff,"Error [main]: glewInit failed: %s\n",glewGetErrorString(err));
@@ -1996,9 +2019,6 @@ void GL_Init()
 #endif 
 int main(int argc,char** args)
 {
-	// initialize glut    
-	glutInit(&argc,args);
-
 	memset(gAudioBuffer,0,AUDIOBUF_SIZE);
 
 	gotoappdirectory(argc,args);
@@ -2017,7 +2037,7 @@ int main(int argc,char** args)
 	}
 
 
-	memset(gKeyState,0,sizeof(int)*256);
+	memset(gKeyState,0,sizeof(gKeyState));
 
 	gVisualRand.init_genrand(0xc0cac01a);
 

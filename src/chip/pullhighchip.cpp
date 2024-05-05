@@ -21,7 +21,7 @@ misrepresented as being the original software.
 distribution.
 */
 #include "atanua.h"
-#include "PullHighChip.h"
+#include "pullhighchip.h"
 
 PullHighChip::PullHighChip()
 {

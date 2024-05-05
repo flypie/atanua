@@ -1,5 +1,7 @@
 #pragma once
 
+typedef GLuint TexPixel;
+
 GLuint load_file_texture(const char* aFilename,int clamp=1);
 //GLuint load_file_texture(const char * aFilename, int clamp = 1);
 

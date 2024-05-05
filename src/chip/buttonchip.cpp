@@ -22,6 +22,7 @@ distribution.
 */
 #include "atanua.h"
 #include "buttonchip.h"
+#include "toolkit.h"
 
 ButtonChip::ButtonChip(int aCharacter)
 {
@@ -69,7 +70,7 @@ void ButtonChip::render(int aChipId)
 
 void ButtonChip::update(float aTick) 
 {
-    if (gKeyState[mCharacter] || mPressed)
+    if (get_key_state(mCharacter) || mPressed)
         mOutputPin.setState(PINSTATE_WRITE_HIGH);
     else
         mOutputPin.setState(PINSTATE_WRITE_LOW);

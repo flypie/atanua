@@ -26,7 +26,7 @@ distribution.
 
 typedef union
 {
-	unsigned long RGBA;
+	TexPixel RGBA;
 	struct
 	{
 		unsigned char R;
@@ -78,7 +78,7 @@ Composite::Composite(CType aSize)
 	mInputPin[2].set(0,4+ypos,this,"Clk");
 
 
-	sprintf_s(TextureName,32,"composite_base %d",Composite::mCompositeNId++);
+	snprintf(TextureName,32,"composite_base %d",Composite::mCompositeNId++);
 
 	mBaseTexture=load_blank_texture(TextureName,1,mxSize,mySize);
 
@@ -133,10 +133,10 @@ Composite::~Composite()
 
 void Composite::render(int aChipId)
 {
-	unsigned long* RawBitMap;
+	unsigned char* RawBitMap;
 	GLuint	FramebufferName;
 
-	if(FindTextBitmap(TextureName,(unsigned char**)&RawBitMap,FramebufferName))
+	if(FindTextBitmap(TextureName,&RawBitMap,FramebufferName))
 	{
 		GLErrorTest();
 		glBindFramebuffer(GL_FRAMEBUFFER,0);
@@ -171,7 +171,7 @@ void Composite::render(int aChipId)
 
 void Composite::update(float aTick)
 {
-	unsigned long* RawBitMap;
+	unsigned char* RawBitMap;
 	GLuint	FramebufferName;
 	netstates	ClkState;
 
@@ -197,7 +197,7 @@ void Composite::update(float aTick)
 				}
 				else
 				{
-					if(FindTextBitmap(TextureName,(unsigned char**)&RawBitMap,FramebufferName))
+					if(FindTextBitmap(TextureName,&RawBitMap,FramebufferName))
 					{
 
 						if(SPin==NETSTATE_HIGH&&!mInHSync)

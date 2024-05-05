@@ -23,7 +23,12 @@ distribution.
 #include "atanua.h"
 #include "atanua_internal.h"
 #include "logicprobe.h"
-#include <direct.h>
+#ifdef WINDOWS_VERSION
+#  include <direct.h>
+#else
+#  include <unistd.h>
+#  define _getcwd getcwd
+#endif
 
 LogicProbe::LogicProbe()
 {
@@ -136,7 +141,7 @@ void LogicProbe::render(int aChipId)
 
                 for(int i=0;Cont;i++)
                 {
-                    sprintf_s(NameBuff,NAMEBUFFLEN,"LogicProbeDump%04d.csv",i);
+                    snprintf(NameBuff,NAMEBUFFLEN,"LogicProbeDump%04d.csv",i);
                     fh=fopen(NameBuff,"r");
                     if(fh!=NULL)
                     {
@@ -176,7 +181,7 @@ void LogicProbe::render(int aChipId)
                         Cont=false;
                     }
                 }
-                sprintf_s(MsgBuff,NAMEBUFFLEN,"Log Dumped to %s\\%s",cwd,NameBuff);
+                snprintf(MsgBuff,NAMEBUFFLEN,"Log Dumped to %s\\%s",cwd,NameBuff);
                 SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_WARNING,__FUNCTION__,MsgBuff,NULL);
                 break;
         }
