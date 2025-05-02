@@ -1996,13 +1996,14 @@ void GL_Init()
 #endif 
 int main(int argc,char** args)
 {
+
 	// initialize glut    
 	glutInit(&argc,args);
 
 	memset(gAudioBuffer,0,AUDIOBUF_SIZE);
 
 	gotoappdirectory(argc,args);
-
+	
 	gConfig.load();
 
 	if(gConfig.mSwapShiftAndCtrl)
@@ -2082,6 +2083,7 @@ int main(int argc,char** args)
 //    SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
 	// For imgui - Enable keyboard UNICODE processing for the text field.
 //    SDL_EnableUNICODE(1);
+
 
 	fn.load("data/vera31.fnt");
 	fn14.load("data/vera14.fnt");

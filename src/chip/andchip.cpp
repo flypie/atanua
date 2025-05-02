@@ -64,7 +64,11 @@ void ANDChip::update(float aTick)
 
     if ((mInputPinA.mNet->mState == NETSTATE_HIGH || mInputPinA.mNet->mState == NETSTATE_NC) &&
         (mInputPinB.mNet->mState == NETSTATE_HIGH || mInputPinB.mNet->mState == NETSTATE_NC))
+    {
         mOutputPin.setState(PINSTATE_WRITE_HIGH);
-    //    else
-        //   mOutputPin.setState(PINSTATE_WRITE_LOW);
+    }
+    else
+    {
+        mOutputPin.setState(PINSTATE_WRITE_LOW);
+    }
 }    

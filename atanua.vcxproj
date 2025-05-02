@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F2DBCA3D-1F46-4572-A50E-0CF982752088}</ProjectGuid>
     <ProjectName>Atanua</ProjectName>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -70,16 +70,34 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PublicIncludeDirectories>C:\opengl\glew-2.1.0\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PublicIncludeDirectories>C:\opengl\glew-2.1.0\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PublicIncludeDirectories>C:\opengl\glew-2.1.0\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <OutDir>$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PublicIncludeDirectories>C:\opengl\glew-2.1.0\include;$(PublicIncludeDirectories)</PublicIncludeDirectories>
+    <OutDir>$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
@@ -97,7 +115,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt;src\include\;src\;src\tinyxml_2_5_3\tinyxml;C:\Users\John Bradley\source\SDL2-2.0.12\include;C:\opengl\freeglut\include;C:\opengl\glfw-3.3.7.bin.WIN32\include\GLFW;C:\opengl\glfw-3.3.2.bin.WIN64\include\GLFW;C:\opengl\glew-2.1.0\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\ucrt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src\include\;src\;src\tinyxml_2_5_3\tinyxml;C:\Users\John Bradley\source\SDL2-2.0.12\include;C:\opengl\freeglut\include;C:\opengl\glfw-3.3.7.bin.WIN32\include\GLFW;C:\opengl\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;GLEW_STATIC;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -106,17 +124,21 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PrecompiledHeaderFile>atanua.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\Release/atanua.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
-      <ObjectFileName>.\Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)/atanua.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
-      <OpenMPSupport>false</OpenMPSupport>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <ConformanceMode>false</ConformanceMode>
+      <OpenMPSupport>false</OpenMPSupport>
+      <EnableVectorLength>VectorLength512</EnableVectorLength>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -124,18 +146,19 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;odbc32.lib;odbccp32.lib;Opengl32.lib;GLU32.lib;glew32s.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>.\Release\Atanua.exe</OutputFile>
+      <OutputFile>$(SolutionDir)\Atanua$(Platform)$(Configuration).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\ucrt\x86;C:\opengl\freeglut\lib;C:\opengl\glfw-3.3.7.bin.WIN32\lib-vc2019;C:\opengl\glew-2.1.0\lib\Release\Win32;C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86;\libraries\SDL-1.2.13\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\opengl\glew-2.1.0\lib\Debug\x64;C:\opengl\glew-2.1.0\lib\Release\Win32;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\ucrt\x86;C:\opengl\freeglut\lib;C:\opengl\glfw-3.3.7.bin.WIN32\lib-vc2019;C:\opengl\glew-2.1.0\lib\Release\x64;C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86;\libraries\SDL-1.2.13\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>.\Release/atanua.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <TargetMachine>MachineX86</TargetMachine>
+      <TargetMachine>NotSet</TargetMachine>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -162,18 +185,22 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PrecompiledHeaderFile>atanua.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\Release/atanua.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
-      <ObjectFileName>.\Release/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)/atanua.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
-      <OpenMPSupport>false</OpenMPSupport>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
       <AdditionalOptions>/arch:AVX512 %(AdditionalOptions)</AdditionalOptions>
       <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <ConformanceMode>false</ConformanceMode>
+      <OpenMPSupport>false</OpenMPSupport>
+      <EnableVectorLength>VectorLength512</EnableVectorLength>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -181,9 +208,9 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;odbc32.lib;odbccp32.lib;Opengl32.lib;GLU32.lib;glew32s.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>.\Release\Atanua.exe</OutputFile>
+      <OutputFile>$(SolutionDir)\Atanua$(Platform)$(Configuration).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\ucrt\x64;C:\opengl\freeglut\lib\x64;C:\opengl\glfw-3.3.7.bin.WIN64\lib-vc2019;C:\opengl\glew-2.1.0\lib\Release\x64;C:\opengl\freeglut\lib;C:\Users\John Bradley\source\SDL2-2.0.12\lib\x64;\libraries\SDL-1.2.13\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\opengl\glew-2.1.0\lib\Debug\x64;C:\opengl\glew-2.1.0\lib\Release\x64;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\ucrt\x64;C:\opengl\freeglut\lib\x64;C:\opengl\glfw-3.3.7.bin.WIN64\lib-vc2019;C:\opengl\freeglut\lib;C:\Users\John Bradley\source\SDL2-2.0.12\lib\x64;\libraries\SDL-1.2.13\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>.\Release/atanua.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
@@ -192,6 +219,8 @@
       </DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <TargetMachine>NotSet</TargetMachine>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -209,19 +238,26 @@
       <AdditionalIncludeDirectories>src\include\;src\;src\tinyxml_2_5_3\tinyxml;C:\Users\John Bradley\source\SDL2-2.0.12\include;C:\opengl\freeglut\include;C:\opengl\glfw-3.3.7.bin.WIN32\include\GLFW;C:\opengl\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;GLEW_STATIC;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PrecompiledHeaderFile>atanua.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\Debug/atanua.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)/atanua.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <ConformanceMode>false</ConformanceMode>
+      <OpenMPSupport>false</OpenMPSupport>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableVectorLength>VectorLength512</EnableVectorLength>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -230,17 +266,18 @@
     <Link>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;odbc32.lib;odbccp32.lib;Opengl32.lib;GLU32.lib;glew32sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
-      <OutputFile>.\Debug\Atanua.exe</OutputFile>
+      <OutputFile>$(SolutionDir)\Atanua$(Platform)$(Configuration).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>C:\opengl\freeglut\lib;C:\opengl\glfw-3.3.7.bin.WIN32\lib-vc2019;C:\opengl\glew-2.1.0\lib\Debug\Win32;C:\opengl\freeglut\lib;C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\opengl\glew-2.1.0\lib\Debug\wIN32;C:\opengl\freeglut\lib;C:\opengl\glfw-3.3.7.bin.WIN32\lib-vc2019;C:\opengl\glew-2.1.0\lib\Debug\Win32;C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>.\Debug/atanua.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <TargetMachine>MachineX86</TargetMachine>
+      <TargetMachine>NotSet</TargetMachine>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -254,7 +291,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\opengl\glfw-3.3.7.bin.WIN64\include\GLFW;C:\opengl\glfw-3.0.4.bin.WIN32\include\GLFW;src\include\;src\;src\tinyxml_2_5_3\tinyxml;C:\Users\John Bradley\source\SDL2-2.0.12\include;C:\opengl\freeglut\include;C:\opengl\glfw-3.3.7.bin.WIN32\include\GLFW;C:\opengl\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\opengl\glfw-3.3.7.bin.WIN64\include\GLFW;src\include\;src\;src\tinyxml_2_5_3\tinyxml;C:\Users\John Bradley\source\SDL2-2.0.12\include;C:\opengl\freeglut\include;C:\opengl\glfw-3.3.7.bin.WIN32\include\GLFW;C:\opengl\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -262,14 +299,22 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <PrecompiledHeaderFile>atanua.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\Debug/atanua.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
-      <ObjectFileName>.\Debug/</ObjectFileName>
-      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>$(SolutionDir)\bin\$(ProjectName)\$(Platform)\$(Configuration)/atanua.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <ConformanceMode>false</ConformanceMode>
+      <OpenMPSupport>false</OpenMPSupport>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <EnableVectorLength>VectorLength512</EnableVectorLength>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -278,129 +323,431 @@
     <Link>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;odbc32.lib;odbccp32.lib;Opengl32.lib;GLU32.lib;glew32sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>NotSet</ShowProgress>
-      <OutputFile>.\Debug\Atanua.exe</OutputFile>
+      <OutputFile>$(SolutionDir)\Atanua$(Platform)$(Configuration).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>C:\opengl\freeglut\lib\x64;C:\opengl\glfw-3.3.7.bin.WIN64\lib-vc2019;C:\opengl\glew-2.1.0\lib\Debug\x64;C:\opengl\freeglut\lib;C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86;C:\opengl\glfw-3.3.7\src\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\opengl\glew-2.1.0\lib\Debug\x64;C:\opengl\freeglut\lib\x64;C:\opengl\glfw-3.3.7.bin.WIN64\lib-vc2019;C:\opengl\freeglut\lib;C:\Users\JohnBradley\source\SDL2-2.0.12\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Debug/atanua.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(SolutionDir)\Atanua$(Platform)$(Configuration).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalOptions />
+      <TargetMachine>NotSet</TargetMachine>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="icon1.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\8051\core.c" />
-    <ClCompile Include="src\8051\disasm.c" />
-    <ClCompile Include="src\8051\opcodes.c" />
-    <ClCompile Include="src\basecode\angelcodefont.cpp" />
-    <ClCompile Include="src\basecode\mersennetwister.cpp" />
-    <ClCompile Include="src\basecode\toolkit.cpp" />
-    <ClCompile Include="src\chip\16segchip.cpp" />
-    <ClCompile Include="src\chip\7segchip.cpp" />
-    <ClCompile Include="src\chip\and3chip.cpp" />
-    <ClCompile Include="src\chip\and8chip.cpp" />
-    <ClCompile Include="src\chip\andchip.cpp" />
-    <ClCompile Include="src\chip\audiochip.cpp" />
-    <ClCompile Include="src\chip\box.cpp" />
-    <ClCompile Include="src\chip\buttonchip.cpp" />
-    <ClCompile Include="src\chip\chip2051.cpp" />
-    <ClCompile Include="src\chip\chip27xx.cpp" />
-    <ClCompile Include="src\chip\chip309.cpp" />
-    <ClCompile Include="src\chip\chip6116.cpp" />
-    <ClCompile Include="src\chip\chip7400.cpp" />
-    <ClCompile Include="src\chip\chip7402.cpp" />
-    <ClCompile Include="src\chip\chip7404.cpp" />
-    <ClCompile Include="src\chip\chip7408.cpp" />
-    <ClCompile Include="src\chip\chip7410.cpp" />
-    <ClCompile Include="src\chip\chip74138.cpp" />
-    <ClCompile Include="src\chip\chip74139.cpp" />
-    <ClCompile Include="src\chip\chip74151.cpp" />
-    <ClCompile Include="src\chip\chip74154.cpp" />
-    <ClCompile Include="src\chip\chip74163.cpp" />
-    <ClCompile Include="src\chip\chip74164.cpp" />
-    <ClCompile Include="src\chip\chip74165.cpp" />
-    <ClCompile Include="src\chip\chip74181.cpp" />
-    <ClCompile Include="src\chip\chip74191.cpp" />
-    <ClCompile Include="src\chip\chip74192.cpp" />
-    <ClCompile Include="src\chip\chip74193.cpp" />
-    <ClCompile Include="src\chip\chip74195.cpp" />
-    <ClCompile Include="src\chip\chip7420.cpp" />
-    <ClCompile Include="src\chip\chip74240.cpp" />
-    <ClCompile Include="src\chip\chip74241.cpp" />
-    <ClCompile Include="src\chip\chip74244.cpp" />
-    <ClCompile Include="src\chip\chip74245.cpp" />
-    <ClCompile Include="src\chip\chip74283.cpp" />
-    <ClCompile Include="src\chip\chip74299.cpp" />
-    <ClCompile Include="src\chip\chip7432.cpp" />
-    <ClCompile Include="src\chip\chip744040.cpp" />
-    <ClCompile Include="src\chip\chip7447.cpp" />
-    <ClCompile Include="src\chip\chip74574.cpp" />
-    <ClCompile Include="src\chip\chip7473.cpp" />
-    <ClCompile Include="src\chip\chip7474.cpp" />
-    <ClCompile Include="src\chip\chip7485.cpp" />
-    <ClCompile Include="src\chip\chip7486.cpp" />
-    <ClCompile Include="src\chip\chip7489.cpp" />
-    <ClCompile Include="src\chip\chip7490.cpp" />
-    <ClCompile Include="src\chip\clockchip.cpp" />
-    <ClCompile Include="src\chip\composite.cpp" />
-    <ClCompile Include="src\chip\dchip.cpp" />
-    <ClCompile Include="src\chip\dflipflop.cpp" />
-    <ClCompile Include="src\chip\dxchip.cpp" />
-    <ClCompile Include="src\chip\extpin.cpp" />
-    <ClCompile Include="src\chip\extrapin.cpp" />
-    <ClCompile Include="src\chip\jkchip.cpp" />
-    <ClCompile Include="src\chip\jkflipflop.cpp" />
-    <ClCompile Include="src\chip\label.cpp" />
-    <ClCompile Include="src\chip\ledchip.cpp" />
-    <ClCompile Include="src\chip\ledgrid.cpp" />
-    <ClCompile Include="src\chip\logicprobe.cpp" />
-    <ClCompile Include="src\chip\muxchip.cpp" />
-    <ClCompile Include="src\chip\namedpin.cpp" />
-    <ClCompile Include="src\chip\nand3chip.cpp" />
-    <ClCompile Include="src\chip\nand8chip.cpp" />
-    <ClCompile Include="src\chip\nandchip.cpp" />
-    <ClCompile Include="src\chip\nor3chip.cpp" />
-    <ClCompile Include="src\chip\nor8chip.cpp" />
-    <ClCompile Include="src\chip\norchip.cpp" />
-    <ClCompile Include="src\chip\notchip.cpp" />
-    <ClCompile Include="src\chip\or3chip.cpp" />
-    <ClCompile Include="src\chip\or8chip.cpp" />
-    <ClCompile Include="src\chip\orchip.cpp" />
-    <ClCompile Include="src\chip\pullhighchip.cpp" />
-    <ClCompile Include="src\chip\pulllowchip.cpp" />
-    <ClCompile Include="src\chip\sedchip.cpp" />
-    <ClCompile Include="src\chip\serchip.cpp" />
-    <ClCompile Include="src\chip\srchip.cpp" />
-    <ClCompile Include="src\chip\srflipflop.cpp" />
-    <ClCompile Include="src\chip\srnegchip.cpp" />
-    <ClCompile Include="src\chip\staticlevelchip.cpp" />
-    <ClCompile Include="src\chip\stepper.cpp" />
-    <ClCompile Include="src\chip\switchchip.cpp" />
-    <ClCompile Include="src\chip\tchip.cpp" />
-    <ClCompile Include="src\chip\tflipflop.cpp" />
-    <ClCompile Include="src\chip\TriStateChip.cpp" />
-    <ClCompile Include="src\chip\xorchip.cpp" />
-    <ClCompile Include="src\core\AtanuaConfig.cpp" />
-    <ClCompile Include="src\core\basechipfactory.cpp" />
-    <ClCompile Include="src\core\BoxStitchingInformation.cpp" />
-    <ClCompile Include="src\core\chip.cpp" />
-    <ClCompile Include="src\core\fileio.cpp" />
-    <ClCompile Include="src\core\fileutils.cpp" />
-    <ClCompile Include="src\core\main.cpp" />
-    <ClCompile Include="src\core\nativefunctions.cpp" />
-    <ClCompile Include="src\core\net.cpp" />
-    <ClCompile Include="src\core\pin.cpp" />
-    <ClCompile Include="src\core\pluginchip.cpp" />
-    <ClCompile Include="src\core\pluginchipfactory.cpp" />
-    <ClCompile Include="src\core\simutils.cpp" />
-    <ClCompile Include="src\core\slidingaverage.cpp" />
-    <ClCompile Include="src\core\texture.cpp" />
-    <ClCompile Include="src\core\wire.cpp" />
+    <ClCompile Include="src\8051\core.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\8051\disasm.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\8051\opcodes.c">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\basecode\angelcodefont.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\basecode\mersennetwister.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\basecode\toolkit.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\16segchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\7segchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\and3chip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\and8chip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\andchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\audiochip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\box.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\buttonchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip2051.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip27xx.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip309.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip6116.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7400.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7402.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7404.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7408.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7410.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74138.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74139.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74151.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74154.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74163.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74164.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74165.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74181.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74191.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74192.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74193.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74195.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7420.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74240.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74241.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74244.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74245.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74283.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74299.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7432.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip744040.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7447.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip74574.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7473.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7474.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7485.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7486.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7489.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\chip7490.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\clockchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\composite.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\dchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\dflipflop.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\dxchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\extpin.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\extrapin.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\jkchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\jkflipflop.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\label.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\ledchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\ledgrid.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\logicprobe.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\muxchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\namedpin.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\nand3chip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\nand8chip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\nandchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\nor3chip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\nor8chip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\norchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\notchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\or3chip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\or8chip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\orchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\pullhighchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\pulllowchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\sedchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\serchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\srchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\srflipflop.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\srnegchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\staticlevelchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\stepper.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\switchchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\tchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\tflipflop.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\TriStateChip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\chip\xorchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\AtanuaConfig.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\basechipfactory.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\BoxStitchingInformation.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\chip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\fileio.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\fileutils.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\main.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\nativefunctions.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\net.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\pin.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\pluginchip.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\pluginchipfactory.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\simutils.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\slidingaverage.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\texture.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="src\core\wire.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+    </ClCompile>
     <ClCompile Include="src\glee\GLee.c" />
     <ClCompile Include="src\stb\stb_image.c" />
     <ClCompile Include="src\stb\stb_image_write.c" />

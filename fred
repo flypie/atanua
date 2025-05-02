@@ -1,0 +1,1578 @@
+
+Microsoft (R) Windows Debugger Version 10.0.22000.194 AMD64
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+CommandLine: Atanuax64Debug.exe 
+
+************* Path validation summary **************
+Response                         Time (ms)     Location
+Deferred                                       srv*
+Symbol search path is: srv*
+Executable search path is: 
+ModLoad: 00000001`40000000 00000001`40154000   Atanuax64Debug.exe
+ModLoad: 00007ffb`85b00000 00007ffb`85d66000   ntdll.dll
+b220:da0c @ 56143781 - LdrpInitializeProcess - INFO: Beginning execution of Atanuax64Debug.exe (C:\Users\JohnBradley\source\repos\atanua\Atanuax64Debug.exe)
+	Current directory: C:\Users\JohnBradley\source\repos\atanua\
+	Package directories: (null)
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143781 - LdrLoadDll - ENTER: DLL name: KERNEL32.DLL
+b220:da0c @ 56143781 - LdrLoadDll - ENTER: KERNEL32.DLL
+b220:da0c @ 56143781 - LdrpLoadDllInternal - ENTER: DLL name: KERNEL32.DLL
+b220:da0c @ 56143781 - LdrpLoadDllInternal - ENTER: KERNEL32.DLL
+b220:da0c @ 56143781 - LdrpFindKnownDll - ENTER: DLL name: KERNEL32.DLL
+b220:da0c @ 56143781 - LdrpFindKnownDll - ENTER: KERNEL32.DLL
+b220:da0c @ 56143781 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpFindKnownDll - RETURN: 0
+b220:da0c @ 56143781 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\KERNEL32.DLL
+b220:da0c @ 56143781 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\KERNEL32.DLL
+ModLoad: 00007ffb`838c0000 00007ffb`83989000   C:\WINDOWS\System32\KERNEL32.DLL
+b220:da0c @ 56143781 - LdrLoadDll - ENTER: DLL name: C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrLoadDll - ENTER: C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrpLoadDllInternal - ENTER: DLL name: C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrpLoadDllInternal - ENTER: C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrpResolveDllName - ENTER: C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrpResolveDllName - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpResolveDllName - RETURN: 0
+b220:da0c @ 56143781 - LdrpMinimalMapModule - ENTER: DLL name: C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrpMinimalMapModule - ENTER: C:\Program Files\Avast Software\Avast\aswhook.dll
+ModLoad: 00007ffb`3afe0000 00007ffb`3affa000   C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpMinimalMapModule - RETURN: 0
+b220:da0c @ 56143781 - LdrpInitializeNode - INFO: Calling init routine 00007FFB3AFED180 for DLL "C:\Program Files\Avast Software\Avast\aswhook.dll"
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: DLL name: ntdll.dll
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: ntdll.dll
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: 0
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: 0
+b220:da0c @ 56143781 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143781 - LdrLoadDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrLoadDll - RETURN: 0
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: DLL name: C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: C:\Program Files\Avast Software\Avast\aswhook.dll
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: 0
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: 0
+b220:da0c @ 56143781 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpMinimalMapModule - RETURN: 0
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-rtlsupport-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-rtlsupport-l1-2-2.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:da0c @ 56143781 - LdrpFindKnownDll - ENTER: DLL name: KERNELBASE.dll
+b220:da0c @ 56143781 - LdrpFindKnownDll - ENTER: KERNELBASE.dll
+b220:da0c @ 56143781 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpFindKnownDll - RETURN: 0
+b220:da0c @ 56143781 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\KERNELBASE.dll
+b220:da0c @ 56143781 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\KERNELBASE.dll
+ModLoad: 00007ffb`82d40000 00007ffb`8310c000   C:\WINDOWS\System32\KERNELBASE.dll
+b220:da0c @ 56143781 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpMinimalMapModule - RETURN: 0
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-provider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-3.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-2-5.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-2-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-2-4.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-io-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-io-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-job-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-legacy-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-largeinteger-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-3.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-namedpipe-l1-2-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-namedpipe-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-namedpipe-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-datetime-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-datetime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-datetime-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-2-3.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-timezone-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processsnapshot-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-3.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-fibers-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-util-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-appcontainer-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-comm-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-realtime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-wow64-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-wow64-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-wow64-l1-1-3.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-systemtopology-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-systemtopology-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processtopology-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-namespace-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-4.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-3.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-xstate-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-xstate-l2-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-xstate-l2-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-normalization-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-fibers-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-fibers-l2-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sidebyside-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-appcompat-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-windowserrorreporting-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-windowserrorreporting-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-windowserrorreporting-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-windowserrorreporting-l1-1-3.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l1-2-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l2-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l3-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-psapi-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-psapi-ansi-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-provider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-appcompat-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReAllocateHeap" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAllocateHeap" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlFreeHeap" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEnterCriticalSection" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlLeaveCriticalSection" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDeleteCriticalSection" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeCriticalSection" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSetLastWin32Error" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryPerformanceFrequency" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryPerformanceCounter" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryUnbiasedInterruptTime" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventWriteTransfer" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventUnregister" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventSetInformation" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventRegister" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventUnregister" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventRegister" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventWriteTransfer" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventActivityIdControl" by name
+b220:da0c @ 56143781 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventSetInformation" by name
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: DLL name: kernelbase.dll
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: kernelbase.dll
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: 0
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: Status: 0x00000000
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: 0
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: DLL name: win32u.dll
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: win32u.dll
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: DLL name: user32.dll
+b220:da0c @ 56143781 - LdrGetDllHandleEx - ENTER: user32.dll
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143781 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143781 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: amsi.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: amsi.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: advapi32.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: advapi32.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: oleaut32
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: oleaut32
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: combase.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: combase.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: ole32.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: ole32.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: Ws2_32.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: Ws2_32.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: win32u.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: win32u.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: user32.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: user32.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: amsi.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: amsi.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: advapi32.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: advapi32.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: oleaut32
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: oleaut32
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: combase.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: combase.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: ole32.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: ole32.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: Ws2_32.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: Ws2_32.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: c0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: c0000135
+b220:da0c @ 56143796 - LdrpInitializeNode - INFO: Calling init routine 00007FFB82E63160 for DLL "C:\WINDOWS\System32\KERNELBASE.dll"
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: ntdll.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: ntdll.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlRegisterFeatureConfigurationChangeNotification" by name
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: ntdll.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: ntdll.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDisownModuleHeapAllocation" by name
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: DLL name: ntdll.dll
+b220:da0c @ 56143796 - LdrGetDllHandleEx - ENTER: ntdll.dll
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpFindLoadedDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrGetDllHandleEx - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryFeatureConfiguration" by name
+b220:da0c @ 56143796 - LdrpInitializeNode - INFO: Calling init routine 00007FFB838EE120 for DLL "C:\WINDOWS\System32\KERNEL32.DLL"
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrLoadDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrLoadDll - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseThreadInitThunk" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvGetWindowsDirectoryW" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernel32-appcompat-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseCheckAppcompatCacheExWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseCleanupAppcompatCacheSupportWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseFreeAppCompatDataForProcessWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseInitAppcompatCacheSupportWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseReadAppCompatDataForProcessWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseUpdateAppcompatCacheWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseFlushAppcompatCacheWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseCheckAppcompatCacheWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseIsAppcompatInfrastructureDisabledWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseDumpAppcompatCacheWorker" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernel32-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "SetVolumeMountPointWStub" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepCopyEncryption" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepSetFileEncryptionCompression" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepGetComputerNameFromNtPath" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernel32-datetime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "GetTimeFormatAWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "GetDateFormatAWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "GetTimeFormatWWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "GetDateFormatWWorker" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernel32-quirks-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkIsEnabledForProcessWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkGetDataWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkIsEnabled2Worker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkIsEnabledForPackage2Worker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkGetData2Worker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkIsEnabledForPackageWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkIsEnabled3Worker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkIsEnabledWorker" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernel32-quirks-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkIsEnabledForPackage3Worker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QuirkIsEnabledForPackage4Worker" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernel32-sidebyside-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "ZombifyActCtxWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "AddRefActCtxWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "FindActCtxSectionStringWWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "GetCurrentActCtxWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "CreateActCtxWWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QueryActCtxSettingsWWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "ActivateActCtxWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "DeactivateActCtxWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "QueryActCtxWWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "FindActCtxSectionGuidWorker" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "ReleaseActCtxWorker" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernel32-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepReportFault" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "CheckForReadOnlyResourceFilter" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernel32-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvGetPreSetValue" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvSetValueKey" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvRestoreKey" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvSetKeySecurity" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvDeleteKey" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvDeleteValue" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvOpenRegEntry" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvCreateRegEntry" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvOpenUserClasses" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepNotifyLoadStringResource" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvGetWindowsDirectoryW" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "TermsrvGetWindowsDirectoryA" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernelbase-processthread-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepGetPackageActivationTokenForSxS2" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepFreeActivationTokenInfo" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepGetPackageActivationTokenForFilePath2" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernelbase-processthread-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepReleaseAppXContext" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseDestroyVDMEnvironment" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepFreeAppCompatData" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepReleaseSxsCreateProcessUtilityStruct" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepAppXExtension" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepAppContainerEnvironmentExtension" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepPostSuccessAppXExtension" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseElevationPostProcessing" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepQueryModuleChpeSettings" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepInitAppCompatData" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepGetAppCompatData" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseIsDosApplication" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepCheckWinSaferRestrictions" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "NtVdm64CreateProcessInternalW" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "RaiseInvalid16BitExeError" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepProcessInvalidImage" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepCheckWebBladeHashes" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepIsProcessAllowed" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseUpdateVDMEntry" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepQueryAppCompat" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepConstructSxsCreateProcessMessage" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseCheckElevation" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BaseWriteErrorElevationRequiredEvent" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernelbase-processthread-l1-1-3.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepCheckPplSupport" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernelbase-processthread-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepGetPackagedAppInfoForFile" by name
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepReleasePackagedAppInfo" by name
+b220:da0c @ 56143796 - LdrpPreprocessDllName - INFO: DLL ext-ms-win-kernelbase-processthread-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: C:\WINDOWS\SYSTEM32\kernel32.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "BasepFinishPackageActivationForSxS" by name
+b220:da0c @ 56143796 - LdrLoadDll - ENTER: DLL name: KERNELBASE.dll
+b220:da0c @ 56143796 - LdrLoadDll - ENTER: KERNELBASE.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: DLL name: KERNELBASE.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - ENTER: KERNELBASE.dll
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpLoadDllInternal - RETURN: 0
+b220:da0c @ 56143796 - LdrLoadDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrLoadDll - RETURN: 0
+b220:da0c @ 56143796 - LdrpGetProcedureAddress - INFO: Locating procedure "KernelbasePostInit" by name
+b220:da0c @ 56143796 - LdrpFindKnownDll - ENTER: DLL name: SDL2.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - ENTER: SDL2.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindKnownDll - RETURN: c0000135
+b220:da0c @ 56143796 - LdrpFindKnownDll - ENTER: DLL name: OPENGL32.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - ENTER: OPENGL32.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindKnownDll - RETURN: c0000135
+b220:6c94 @ 56143796 - LdrpSearchPath - ENTER: DLL name: SDL2.dll
+b220:6c94 @ 56143796 - LdrpSearchPath - ENTER: SDL2.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - ENTER: DLL name: GLU32.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - ENTER: GLU32.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpFindKnownDll - RETURN: c0000135
+b220:80f4 @ 56143796 - LdrpSearchPath - ENTER: DLL name: OPENGL32.dll
+b220:80f4 @ 56143796 - LdrpSearchPath - ENTER: OPENGL32.dll
+b220:80f4 @ 56143796 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\source\repos\atanua\OPENGL32.dll
+b220:80f4 @ 56143796 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\source\repos\atanua\OPENGL32.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - ENTER: DLL name: USER32.dll
+b220:ce28 @ 56143796 - LdrpSearchPath - ENTER: DLL name: GLU32.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - ENTER: USER32.dll
+b220:ce28 @ 56143796 - LdrpSearchPath - ENTER: GLU32.dll
+b220:ce28 @ 56143796 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\source\repos\atanua\GLU32.dll
+b220:da0c @ 56143796 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143796 - LdrpFindKnownDll - RETURN: 0
+b220:80f4 @ 56143796 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:ce28 @ 56143796 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\source\repos\atanua\GLU32.dll
+b220:da0c @ 56143796 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\USER32.dll
+b220:80f4 @ 56143796 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143796 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\USER32.dll
+b220:80f4 @ 56143796 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:80f4 @ 56143796 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\SYSTEM32\OPENGL32.dll
+b220:ce28 @ 56143796 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143796 - LdrpResolveDllName - ENTER: C:\WINDOWS\SYSTEM32\OPENGL32.dll
+b220:ce28 @ 56143796 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143796 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143796 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\SYSTEM32\GLU32.dll
+b220:6c94 @ 56143796 - LdrpComputeLazyDllPath - INFO: DLL search path computed: C:\Users\JohnBradley\source\repos\atanua;C:\WINDOWS\SYSTEM32;C:\WINDOWS\system;C:\WINDOWS;.;C:\Program Files (x86)\Windows Kits\10\Debuggers\x64;C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-19.0.1.10-hotspot\bin;C:\STMicroelectronics\st_toolset\asm;C:\Program Files (x
+b220:ce28 @ 56143796 - LdrpResolveDllName - ENTER: C:\WINDOWS\SYSTEM32\GLU32.dll
+b220:6c94 @ 56143796 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\source\repos\atanua\SDL2.dll
+b220:6c94 @ 56143796 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\source\repos\atanua\SDL2.dll
+b220:80f4 @ 56143796 - LdrpResolveDllName - RETURN: Status: 0x00000000
+ModLoad: 00007ffb`858f0000 00007ffb`85aba000   C:\WINDOWS\System32\USER32.dll
+b220:80f4 @ 56143796 - LdrpResolveDllName - RETURN: 0
+b220:da0c @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:ce28 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0x00000000
+b220:da0c @ 56143812 - LdrpMinimalMapModule - RETURN: 0
+b220:80f4 @ 56143812 - LdrpSearchPath - RETURN: Status: 0x00000000
+b220:80f4 @ 56143812 - LdrpSearchPath - RETURN: 0
+b220:ce28 @ 56143812 - LdrpResolveDllName - RETURN: 0
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0x00000000
+b220:ce28 @ 56143812 - LdrpSearchPath - RETURN: Status: 0x00000000
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: 0
+b220:6c94 @ 56143812 - LdrpSearchPath - RETURN: Status: 0x00000000
+b220:ce28 @ 56143812 - LdrpSearchPath - RETURN: 0
+b220:6c94 @ 56143812 - LdrpSearchPath - RETURN: 0
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\SYSTEM32\OPENGL32.dll
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\SYSTEM32\OPENGL32.dll
+b220:da0c @ 56143812 - LdrGetDllHandleEx - ENTER: DLL name: ntdll.dll
+b220:da0c @ 56143812 - LdrGetDllHandleEx - ENTER: ntdll.dll
+b220:ce28 @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\SYSTEM32\GLU32.dll
+b220:ce28 @ 56143812 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\SYSTEM32\GLU32.dll
+b220:6c94 @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\Users\JohnBradley\source\repos\atanua\SDL2.dll
+b220:da0c @ 56143812 - LdrpFindLoadedDllInternal - RETURN: Status: 0x00000000
+b220:6c94 @ 56143812 - LdrpMinimalMapModule - ENTER: C:\Users\JohnBradley\source\repos\atanua\SDL2.dll
+b220:da0c @ 56143812 - LdrpFindLoadedDllInternal - RETURN: 0
+b220:da0c @ 56143812 - LdrGetDllHandleEx - RETURN: Status: 0x00000000
+b220:da0c @ 56143812 - LdrGetDllHandleEx - RETURN: 0
+ModLoad: 00007ffb`619d0000 00007ffb`61adc000   C:\WINDOWS\SYSTEM32\OPENGL32.dll
+b220:da0c @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryFeatureConfiguration" by name
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - RETURN: 0
+ModLoad: 00000000`63be0000 00000000`63d13000   C:\Users\JohnBradley\source\repos\atanua\SDL2.dll
+ModLoad: 00007ffb`61340000 00007ffb`6136d000   C:\WINDOWS\SYSTEM32\GLU32.dll
+b220:ce28 @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:da0c @ 56143812 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\USER32.dll" failed with status 0xc000008a
+b220:6c94 @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x4000000e
+b220:ce28 @ 56143812 - LdrpMinimalMapModule - RETURN: 0
+b220:6c94 @ 56143812 - LdrpMinimalMapModule - RETURN: 4000000e
+b220:6c94 @ 56143812 - LdrpSearchPath - ENTER: DLL name: SDL2.dll
+b220:da0c @ 56143812 - LdrpFindKnownDll - ENTER: DLL name: win32u.dll
+b220:6c94 @ 56143812 - LdrpSearchPath - ENTER: SDL2.dll
+b220:da0c @ 56143812 - LdrpFindKnownDll - ENTER: win32u.dll
+b220:80f4 @ 56143812 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\SYSTEM32\OPENGL32.dll" failed with status 0xc000008a
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\SYSTEM32\SDL2.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\WINDOWS\SYSTEM32\SDL2.dll
+b220:ce28 @ 56143812 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\SYSTEM32\GLU32.dll" failed with status 0xc000008a
+b220:da0c @ 56143812 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143812 - LdrpFindKnownDll - RETURN: 0
+b220:da0c @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\win32u.dll
+b220:80f4 @ 56143812 - LdrpFindKnownDll - ENTER: DLL name: msvcrt.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143812 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\win32u.dll
+b220:80f4 @ 56143812 - LdrpFindKnownDll - ENTER: msvcrt.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143812 - LdrpFindKnownDll - ENTER: DLL name: msvcrt.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\system\SDL2.dll
+b220:80f4 @ 56143812 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\WINDOWS\system\SDL2.dll
+b220:80f4 @ 56143812 - LdrpFindKnownDll - RETURN: 0
+b220:ce28 @ 56143812 - LdrpFindKnownDll - ENTER: msvcrt.dll
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\msvcrt.dll
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\msvcrt.dll
+ModLoad: 00007ffb`83890000 00007ffb`838b7000   C:\WINDOWS\System32\win32u.dll
+b220:ce28 @ 56143812 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143812 - LdrpMinimalMapModule - RETURN: 0
+b220:ce28 @ 56143812 - LdrpFindKnownDll - RETURN: 0
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\SDL2.dll
+b220:ce28 @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\msvcrt.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\WINDOWS\SDL2.dll
+b220:ce28 @ 56143812 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\msvcrt.dll
+ModLoad: 00007ffb`83fb0000 00007ffb`84059000   C:\WINDOWS\System32\msvcrt.dll
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - RETURN: 0
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143812 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\win32u.dll" failed with status 0xc000008a
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: .\SDL2.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: .\SDL2.dll
+ModLoad: 00000000`00a30000 00000000`00ad9000   C:\WINDOWS\System32\msvcrt.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0xc000022d
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0x00000000
+b220:80f4 @ 56143812 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\msvcrt.dll" failed with status 0xc000008a
+b220:ce28 @ 56143812 - LdrpMinimalMapModule - RETURN: c000022d
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: 0
+b220:6c94 @ 56143812 - LdrpSearchPath - RETURN: Status: 0x00000000
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-classicprovider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpSearchPath - RETURN: 0
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-datetime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\Users\JohnBradley\source\repos\atanua\SDL2.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpMinimalMapModule - ENTER: C:\Users\JohnBradley\source\repos\atanua\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-provider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-fibers-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+ModLoad: 00000000`63be0000 00000000`63d13000   C:\Users\JohnBradley\source\repos\atanua\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x4000000e
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpMinimalMapModule - RETURN: 4000000e
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpSearchPath - ENTER: DLL name: SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpSearchPath - ENTER: SDL2.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-namedpipe-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-util-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-3.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\Common Files\Oracle\Java\java8path\SDL2.dll
+b220:80f4 @ 56143812 - LdrpFindKnownDll - ENTER: DLL name: ADVAPI32.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-privateprofile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\Common Files\Oracle\Java\java8path\SDL2.dll
+b220:80f4 @ 56143812 - LdrpFindKnownDll - ENTER: ADVAPI32.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-atoms-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSetLastWin32Error" by name
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:80f4 @ 56143812 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-obsolete-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpFindKnownDll - RETURN: 0
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\ADVAPI32.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-stringansi-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\ADVAPI32.dll
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAllocateHeap" by name
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sidebyside-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlFreeHeap" by name
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\Common Files\Oracle\Java\javapath\SDL2.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-kernel32-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\Common Files\Oracle\Java\javapath\SDL2.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-kernel32-legacy-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc000003a
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReAllocateHeap" by name
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSizeHeap" by name
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-kernel32-legacy-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c000003a-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\Eclipse Adoptium\jdk-19.0.1.10-hotspot\bin\SDL2.dll
+ModLoad: 00007ffb`852e0000 00007ffb`85392000   C:\WINDOWS\System32\ADVAPI32.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files\Eclipse Adoptium\jdk-19.0.1.10-hotspot\bin\SDL2.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-appinit-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlExitUserThread" by name
+b220:da0c @ 56143812 - LdrpFindKnownDll - ENTER: DLL name: GDI32.dll
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - RETURN: 0
+b220:da0c @ 56143812 - LdrpFindKnownDll - ENTER: GDI32.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryPerformanceCounter" by name
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143812 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlLeaveCriticalSection" by name
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEnterCriticalSection" by name
+b220:da0c @ 56143812 - LdrpFindKnownDll - RETURN: 0
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDeleteCriticalSection" by name
+b220:da0c @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\GDI32.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\STMicroelectronics\st_toolset\asm\SDL2.dll
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEncodePointer" by name
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\STMicroelectronics\st_toolset\asm\SDL2.dll
+b220:da0c @ 56143812 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\GDI32.dll
+b220:ce28 @ 56143812 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDecodePointer" by name
+b220:80f4 @ 56143812 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\ADVAPI32.dll" failed with status 0xc000008a
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\STMicroelectronics\st_toolset\asm\SDL2.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\STMicroelectronics\st_toolset\asm\SDL2.dll
+ModLoad: 00007ffb`83db0000 00007ffb`83ddb000   C:\WINDOWS\System32\GDI32.dll
+b220:da0c @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-controller-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:da0c @ 56143812 - LdrpMinimalMapModule - RETURN: 0
+b220:80f4 @ 56143812 - LdrpFindKnownDll - ENTER: DLL name: sechost.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\Java\jdk-11.0.6\bin\SDL2.dll
+b220:80f4 @ 56143812 - LdrpFindKnownDll - ENTER: sechost.dll
+b220:80f4 @ 56143812 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files\Java\jdk-11.0.6\bin\SDL2.dll
+b220:80f4 @ 56143812 - LdrpFindKnownDll - RETURN: 0
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\sechost.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\sechost.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143812 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\GDI32.dll" failed with status 0xc000008a
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\system32\SDL2.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\WINDOWS\system32\SDL2.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+ModLoad: 00007ffb`83cf0000 00007ffb`83d96000   C:\WINDOWS\System32\sechost.dll
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\SDL2.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\WINDOWS\SDL2.dll
+b220:80f4 @ 56143812 - LdrpMinimalMapModule - RETURN: 0
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\System32\Wbem\SDL2.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\WINDOWS\System32\Wbem\SDL2.dll
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-gdi-internal-uap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\gdi32full.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143812 - LdrpFindKnownDll - ENTER: DLL name: gdi32full.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\dosbin\SDL2.dll
+b220:da0c @ 56143812 - LdrpFindKnownDll - ENTER: gdi32full.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\dosbin\SDL2.dll
+b220:da0c @ 56143812 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:80f4 @ 56143812 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\sechost.dll" failed with status 0xc000008b
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143812 - LdrpFindKnownDll - RETURN: 0
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143812 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\gdi32full.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\System32\OpenSSH\SDL2.dll
+b220:da0c @ 56143812 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\gdi32full.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-crt-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\WINDOWS\System32\OpenSSH\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-crt-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\AOMEI Backupper\SDL2.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\AOMEI Backupper\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+ModLoad: 00007ffb`83600000 00007ffb`83732000   C:\WINDOWS\System32\gdi32full.dll
+b220:da0c @ 56143812 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc000003a
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143812 - LdrpMinimalMapModule - RETURN: 0
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c000003a-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\dotnet\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files\dotnet\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\System32\WindowsPowerShell\v1.0\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\WINDOWS\System32\WindowsPowerShell\v1.0\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-util-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-provider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143812 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\gdi32full.dll" failed with status 0xc000008a
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\Microsoft SQL Server\120\Tools\Binn\SDL2.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Program Files\Microsoft SQL Server\120\Tools\Binn\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143812 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: DLL name: C:\Users\John Bradley\AppData\Local\Programs\Python\Python37\SDL2.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpFindKnownDll - ENTER: DLL name: msvcp_win.dll
+b220:6c94 @ 56143812 - LdrpResolveDllName - ENTER: C:\Users\John Bradley\AppData\Local\Programs\Python\Python37\SDL2.dll
+b220:da0c @ 56143812 - LdrpFindKnownDll - ENTER: msvcp_win.dll
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-wow64-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:80f4 @ 56143812 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143812 - LdrpFindKnownDll - RETURN: 0
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\msvcp_win.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\ProgramData\cmake-3.15.4-win64-x64\bin\SDL2.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\ProgramData\cmake-3.15.4-win64-x64\bin\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\msvcp_win.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\SDL2.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM8\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-io-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-rtlsupport-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+ModLoad: 00007ffb`82c90000 00007ffb`82d33000   C:\WINDOWS\System32\msvcp_win.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM32\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\COSMIC\FSE_Compilers\CXSTM32\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpMinimalMapModule - RETURN: 0
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\ZiLOG\ZDS_3.68\bin\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-consumer-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\ZiLOG\ZDS_3.68\bin\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-consumer-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-core-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86\SDL2.dll
+b220:da0c @ 56143828 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\msvcp_win.dll" failed with status 0xc000008a
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-core-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-core-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-management-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-management-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-private-l1-1-4.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:da0c @ 56143828 - LdrpFindKnownDll - ENTER: DLL name: ucrtbase.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0x00000000
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-private-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:da0c @ 56143828 - LdrpFindKnownDll - ENTER: ucrtbase.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: 0
+b220:6c94 @ 56143828 - LdrpSearchPath - RETURN: Status: 0x00000000
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSetLastWin32Error" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-private-l1-1-3.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:6c94 @ 56143828 - LdrpSearchPath - RETURN: 0
+b220:da0c @ 56143828 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAllocateHeap" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:da0c @ 56143828 - LdrpFindKnownDll - RETURN: 0
+b220:da0c @ 56143828 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\ucrtbase.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlFreeHeap" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-service-winsvc-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:da0c @ 56143828 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\ucrtbase.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-namedpipe-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "InitializeProcThreadAttributeList" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143828 - LdrpMinimalMapModule - ENTER: DLL name: C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86\SDL2.dll
+b220:6c94 @ 56143828 - LdrpMinimalMapModule - ENTER: C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "OpenThreadToken" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+ModLoad: 00007ffb`834b0000 00007ffb`835fb000   C:\WINDOWS\System32\ucrtbase.dll
+b220:da0c @ 56143828 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+ModLoad: 00000000`63be0000 00000000`63d13000   C:\Users\John Bradley\source\SDL2-2.0.12\lib\x86\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpMinimalMapModule - RETURN: 0
+b220:ce28 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "UpdateProcThreadAttribute" by name
+b220:6c94 @ 56143828 - LdrpMinimalMapModule - RETURN: Status: 0x4000000e
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpMinimalMapModule - RETURN: 4000000e
+b220:ce28 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "OpenProcessToken" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDeleteCriticalSection" by name
+b220:da0c @ 56143828 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\ucrtbase.dll" failed with status 0xc000008a
+b220:6c94 @ 56143828 - LdrpSearchPath - ENTER: DLL name: SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReleaseSRWLockShared" by name
+b220:6c94 @ 56143828 - LdrpSearchPath - ENTER: SDL2.dll
+b220:80f4 @ 56143828 - LdrpFindKnownDll - ENTER: DLL name: RPCRT4.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReleaseSRWLockExclusive" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeSRWLock" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\Oracle\VirtualBox\SDL2.dll
+b220:80f4 @ 56143828 - LdrpFindKnownDll - ENTER: RPCRT4.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Program Files\Oracle\VirtualBox\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAcquireSRWLockExclusive" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEnterCriticalSection" by name
+b220:80f4 @ 56143828 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlLeaveCriticalSection" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAcquireSRWLockShared" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpFindKnownDll - RETURN: 0
+b220:80f4 @ 56143828 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\RPCRT4.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEncodePointer" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143828 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\RPCRT4.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDecodePointer" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventUnregister" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventWriteTransfer" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventRegister" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventSetInformation" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-kernel32-legacy-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventActivityIdControl" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc000003a
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+ModLoad: 00007ffb`85140000 00007ffb`85256000   C:\WINDOWS\System32\RPCRT4.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:80f4 @ 56143828 - LdrpMinimalMapModule - RETURN: 0
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c000003a-c0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\AMD\ATI.ACE\Core-Static\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlWakeConditionVariable" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpSetTimer" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\AMD\ATI.ACE\Core-Static\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpWaitForTimer" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpReleaseTimer" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpReleaseWork" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-fibers-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpPostWork" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\AppData\Local\Programs\Python\Python37\Scripts\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\AppData\Local\Programs\Python\Python37\Scripts\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "GetProcessMitigationPolicy" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-fibers-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\RPCRT4.dll" failed with status 0xc000008a
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-datetime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Z80Tools\tasm301\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Z80Tools\tasm301\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-rtlsupport-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-console-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Z80Tools\z80_workbench\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Z80Tools\z80_workbench\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-namedpipe-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-timezone-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-interlocked-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-io-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Z80Tools\z80_workbench\assembler\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Z80Tools\z80_workbench\assembler\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-util-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-interlocked-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-math-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSetLastWin32Error" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\ProgramFiles\freeglut\bin\x64\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlFreeHeap" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-locale-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-misc-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\ProgramFiles\freeglut\bin\x64\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-runtime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-namedpipe-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAllocateHeap" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReAllocateHeap" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSizeHeap" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlExitUserThread" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc000003a
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c000003a-c0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\opengl\freeglut\bin\SDL2.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\opengl\freeglut\bin\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "VerSetConditionMask" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-rtlsupport-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEnterCriticalSection" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlLeaveCriticalSection" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Z80Tools\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-timezone-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Z80Tools\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDeleteCriticalSection" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-legacy-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-downlevel-shlwapi-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\GitHub CLI\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Program Files\GitHub CLI\SDL2.dll
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-util-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryPerformanceFrequency" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryPerformanceCounter" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEncodePointer" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInterlockedPushEntrySList" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\gettext-iconv\bin\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInterlockedFlushSList" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-timezone-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\Program Files\gettext-iconv\bin\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-audit-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-audit-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\sechost.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: D:\msys64\mingw64\bin\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: D:\msys64\mingw64\bin\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-provider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSetLastWin32Error" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-pcw-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlFreeHeap" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc000003a
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAllocateHeap" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-interlocked-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c000003a-c0000135
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReAllocateHeap" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: D:\msys64\cygwin64\bin\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-version-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInterlockedFlushSList" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInterlockedPopEntrySList" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: D:\msys64\cygwin64\bin\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-version-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInterlockedPushEntrySList" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryDepthSList" by name
+b220:80f4 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-com-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\combase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeSListHead" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc000003a
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:80f4 @ 56143828 - LdrpFindKnownDll - ENTER: DLL name: combase.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c000003a-c0000135
+b220:80f4 @ 56143828 - LdrpFindKnownDll - ENTER: combase.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\system32\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-runtime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\WINDOWS\system32\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:ce28 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "OpenThreadToken" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143828 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-provider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\SDL2.dll
+b220:80f4 @ 56143828 - LdrpFindKnownDll - RETURN: 0
+b220:ce28 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "OpenProcessToken" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\WINDOWS\SDL2.dll
+b220:80f4 @ 56143828 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\combase.dll
+b220:80f4 @ 56143828 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\combase.dll
+b220:ce28 @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "SetThreadToken" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeCriticalSection" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\System32\Wbem\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDeleteCriticalSection" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\WINDOWS\System32\Wbem\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAcquireSRWLockExclusive" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-psapi-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReleaseSRWLockExclusive" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+ModLoad: 00007ffb`853a0000 00007ffb`85724000   C:\WINDOWS\System32\combase.dll
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEnterCriticalSection" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlLeaveCriticalSection" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSetCriticalSectionSpinCount" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\System32\WindowsPowerShell\v1.0\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143828 - LdrpMinimalMapModule - RETURN: 0
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeSRWLock" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlWakeAddressAll" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\WINDOWS\System32\WindowsPowerShell\v1.0\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryPerformanceCounter" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpReleaseWork" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: DLL name: C:\WINDOWS\System32\OpenSSH\SDL2.dll
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpPostWork" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpWaitForWork" by name
+b220:6c94 @ 56143828 - LdrpResolveDllName - ENTER: C:\WINDOWS\System32\OpenSSH\SDL2.dll
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpReleaseTimer" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpSetTimer" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpIsTimerSet" by name
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpWaitForTimer" by name
+b220:da0c @ 56143828 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143828 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\combase.dll" failed with status 0xc000008a
+b220:ce28 @ 56143828 - LdrpGetProcedureAddress - INFO: Locating procedure "TpReleaseIoCompletion" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpStartAsyncIoOperation" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpCancelAsyncIoOperation" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\source\vcpkg\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpWaitForIoCompletion" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\source\vcpkg\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpReleasePool" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-rtlsupport-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-runtime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-2-4.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\source\swigwin\SDL2.dll
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\source\swigwin\SDL2.dll
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\Git\cmd\SDL2.dll
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-interlocked-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-fibers-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Program Files\Git\cmd\SDL2.dll
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-kernel32-legacy-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-fibers-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-stringansi-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "OpenThreadToken" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files\TortoiseGit\bin\SDL2.dll
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Program Files\TortoiseGit\bin\SDL2.dll
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "SetThreadToken" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-interlocked-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-version-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-version-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\SDL2.dll
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "OpenProcessToken" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-wow64-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\SDL2.dll
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-privateprofile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Wincupl\WINCUPL\EXE\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEnterCriticalSection" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Wincupl\WINCUPL\EXE\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlLeaveCriticalSection" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-realtime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-windowserrorreporting-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "LdrResolveDelayLoadedAPI" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc000003a
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAllocateHeap" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDeleteCriticalSection" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c000003a-c0000135
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Wincupl\WINCUPL\FITTERS\SDL2.dll
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Wincupl\WINCUPL\FITTERS\SDL2.dll
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "InitOnceBeginInitialize" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-stateseparation-helpers-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0 was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "InitOnceComplete" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeCriticalSection" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\AppData\Local\Programs\Microsoft VS Code\bin\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDecodePointer" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEncodePointer" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\AppData\Local\Programs\Microsoft VS Code\bin\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpCallbackUnloadDllOnCompletion" by name
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpReleaseIoCompletion" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-timezone-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpCancelAsyncIoOperation" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-util-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpStartAsyncIoOperation" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-wow64-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpFindKnownDll - ENTER: DLL name: COMDLG32.dll
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143843 - LdrpFindKnownDll - ENTER: COMDLG32.dll
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\AppData\Local\Microsoft\WindowsApps\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventRegister" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventSetInformation" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\AppData\Local\Microsoft\WindowsApps\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventUnregister" by name
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventWriteTransfer" by name
+b220:da0c @ 56143843 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-provider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpFindKnownDll - RETURN: 0
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:da0c @ 56143843 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\COMDLG32.dll
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\COMDLG32.dll
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\.dotnet\tools\SDL2.dll
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-privateprofile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\.dotnet\tools\SDL2.dll
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-shlwapi-legacy-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sidebyside-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-windowserrorreporting-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-quirks-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-path-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc000003a
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processsnapshot-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+ModLoad: 00007ffb`84ed0000 00007ffb`84fc4000   C:\WINDOWS\System32\COMDLG32.dll
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:da0c @ 56143843 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlWakeConditionVariable" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c000003a-c0000135
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-psapi-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpMinimalMapModule - RETURN: 0
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlWakeAddressSingle" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\AppData\Local\GitHubDesktop\bin\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlWakeAddressAll" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlWakeAllConditionVariable" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\AppData\Local\GitHubDesktop\bin\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlLeaveCriticalSection" by name
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEnterCriticalSection" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReleaseSRWLockExclusive" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAcquireSRWLockExclusive" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlTryAcquireSRWLockExclusive" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: DLL name: C:\Users\JohnBradley\AppData\Local\Muse Hub\lib\SDL2.dll
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDeleteCriticalSection" by name
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:6c94 @ 56143843 - LdrpResolveDllName - ENTER: C:\Users\JohnBradley\AppData\Local\Muse Hub\lib\SDL2.dll
+b220:80f4 @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\COMDLG32.dll" failed with status 0xc000008b
+b220:6c94 @ 56143843 - LdrpResolveDllName - INFO: Original status: 0xc0000034
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSetLastWin32Error" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEncodePointer" by name
+b220:6c94 @ 56143843 - LdrpResolveDllName - RETURN: c0000034-c0000135
+b220:6c94 @ 56143843 - LdrpSearchPath - RETURN: Status: 0xc0000135
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDecodePointer" by name
+b220:6c94 @ 56143843 - LdrpSearchPath - RETURN: c0000135
+b220:6c94 @ 56143843 - LdrpProcessWork - ERROR: Unable to load DLL: "SDL2.dll", Parent Module: "C:\Users\JohnBradley\source\repos\atanua\Atanuax64Debug.exe", Status: 0xc000007b
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpWaitForWork" by name
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpPostWork" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpReleaseWork" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-runtime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpCallbackUnloadDllOnCompletion" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryPerformanceFrequency" by name
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventSetInformation" by name
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryPerformanceCounter" by name
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventRegister" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventUnregister" by name
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "EtwEventWriteTransfer" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:ce28 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeSListHead" by name
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlFreeHeap" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAllocateHeap" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSizeHeap" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlSetLastWin32Error" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlDeleteCriticalSection" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAcquireSRWLockShared" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReleaseSRWLockShared" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlAcquireSRWLockExclusive" by name
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlReleaseSRWLockExclusive" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlLeaveCriticalSection" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlEnterCriticalSection" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeSRWLock" by name
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeCriticalSection" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpReleaseTimer" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpSetTimer" by name
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "TpWaitForTimer" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlQueryPerformanceCounter" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-com-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\combase.dll by API set
+b220:80f4 @ 56143843 - LdrpGetProcedureAddress - INFO: Locating procedure "RtlInitializeSListHead" by name
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-path-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-com-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\combase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-winrt-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\combase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-winrt-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\combase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-psapi-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-winrt-error-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\combase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-winrt-error-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\combase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-version-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-rtlsupport-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-interlocked-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-provider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-shcore-scaling-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\shcore.dll by API set
+b220:da0c @ 56143843 - LdrpFindKnownDll - ENTER: DLL name: shcore.dll
+b220:da0c @ 56143843 - LdrpFindKnownDll - ENTER: shcore.dll
+b220:da0c @ 56143843 - LdrpFindKnownDll - RETURN: Status: 0x00000000
+b220:da0c @ 56143843 - LdrpFindKnownDll - RETURN: 0
+b220:da0c @ 56143843 - LdrpMinimalMapModule - ENTER: DLL name: C:\WINDOWS\System32\shcore.dll
+b220:da0c @ 56143843 - LdrpMinimalMapModule - ENTER: C:\WINDOWS\System32\shcore.dll
+ModLoad: 00007ffb`846a0000 00007ffb`8478f000   C:\WINDOWS\System32\shcore.dll
+b220:da0c @ 56143843 - LdrpMinimalMapModule - RETURN: Status: 0x00000000
+b220:da0c @ 56143843 - LdrpMinimalMapModule - RETURN: 0
+b220:da0c @ 56143843 - LdrpFindDllActivationContext - INFO: Probing for the manifest of DLL "C:\WINDOWS\System32\shcore.dll" failed with status 0xc000008a
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-runtime-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-private-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-crt-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ucrtbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-synch-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-eventing-provider-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-util-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-debug-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-handle-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-rtlsupport-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processthreads-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-profile-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-interlocked-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-heap-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-shlwapi-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-registry-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-security-base-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-memory-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-commandlinetoargv-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-shlwapi-legacy-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-processenvironment-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-wow64-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-sysinfo-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-l2-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-largeinteger-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-quirks-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-io-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l2-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-file-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-threadpool-legacy-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-atoms-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-errorhandling-l1-1-2.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-version-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-string-obsolete-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernel32.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-libraryloader-l1-2-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-localization-obsolete-l1-2-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-path-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-apiquery-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\ntdll.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-1.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpPreprocessDllName - INFO: DLL api-ms-win-core-delayload-l1-1-0.dll was redirected to C:\WINDOWS\SYSTEM32\kernelbase.dll by API set
+b220:da0c @ 56143843 - LdrpInitializeProcess - ERROR: Walking the import tables of the executable and its static imports failed with status 0xc000007b
+b220:da0c @ 56143843 - _LdrpInitialize - ERROR: Process initialization failed with status 0xc000007b
+b220:da0c @ 56143843 - LdrpInitializationFailure - ERROR: Process initialization failed with status 0xc000007b
+ntdll!NtTerminateProcess+0x14:
+00007ffb`85c624f4 c3              ret
+0:000> cdb: Reading initial command 'g;q'
+       ^ No runnable debuggees error in 'g;q'
+0:000> quit:
